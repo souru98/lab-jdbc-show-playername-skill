@@ -32,7 +32,7 @@ public class Main
 		
 		ArrayList<Player> list=(ArrayList<Player>) playerdao.getAllPlayers();
 		
-		System.out.println("player Id"+"\t"+"playername"+"\t"+"\t"+"playercountry"+"\t"+"\t"+"skillname");
+		System.out.println("playerId"+"\t"+"playername"+"\t"+"\t"+"playercountry"+"\t"+"\t"+"skillname");
 		System.out.println();
 		
 		for(Player p:list)

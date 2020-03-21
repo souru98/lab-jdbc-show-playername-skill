@@ -21,7 +21,7 @@ public class PlayerDAO
 		Connection con=ConnectionManager.getConnection();
 		 Statement stmt=  con.createStatement();
 			
-			ResultSet rs =stmt.executeQuery("select * from player natural JOIN skill  where  player.skill_id=skill.skillid");
+			ResultSet rs =stmt.executeQuery("select * from player  JOIN skills  on  player.skillid=skills.skillid");
 		  
 			while(rs.next())
 		    {
